@@ -16,8 +16,6 @@ import com.firebase.uidemo.database.ChatHolder;
 import com.firebase.uidemo.databinding.ActivityChatBinding;
 import com.firebase.uidemo.util.SignInResultNotifier;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
@@ -45,7 +43,11 @@ public class RealtimeDbChatActivity extends AppCompatActivity
      */
     @NonNull
     protected final Query sChatQuery =
-            FirebaseDatabase.getInstance().getReference().child("chats").limitToLast(50);
+            FirebaseDatabase.getInstance(
+                            "https://practicafirebase-f0300-default-rtdb.europe-west1.firebasedatabase.app/")
+                    .getReference()
+                    .child("chats")
+                    .limitToLast(50);
 
     private ActivityChatBinding mBinding;
 
