@@ -16,6 +16,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/tvCountry" />
+
         <EditText
             android:id="@+id/countryName"
             android:layout_width="0dp"
@@ -36,14 +44,7 @@
             android:onClick="obtenerWeatherDataByCountry"
             android:src="@android:drawable/ic_menu_search" />
 
-        <TextView
-            android:id="@+id/tvCountry"
-            android:layout_width="11dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="end"
-            android:text="@string/tvCountry"
-            android:textAlignment="textEnd" />
+
     </LinearLayout>
 
     <ScrollView
