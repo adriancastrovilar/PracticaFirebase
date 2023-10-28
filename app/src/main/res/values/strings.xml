@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Firebase UI</string>
+    <string name="app_name">Práctica Firebase</string>
 
     <!-- Chooser -->
-    <string name="title_auth_activity">Auth UI Demo</string>
+    <string name="title_auth_activity">Authorization</string>
     <string name="title_firestore_activity">Cloud Firestore Demo</string>
     <string name="title_firestore_paging_activity">Cloud Firestore Paging Demo</string>
     <string name="title_realtime_database_activity">Realtime Database Demo</string>
     <string name="title_realtime_database_paging_activity">Realtime Database Paging Demo</string>
     <string name="title_storage_activity">Storage Image Demo</string>
 
-    <string name="desc_auth">Demonstrates the Firebase Auth UI flow, with customization options.</string>
+    <string name="desc_auth">Allows sign up and sign in via email.</string>
     <string name="desc_anonymous_upgrade">Demonstrates upgrading an anonymous account using FirebaseUI.</string>
     <string name="desc_firestore">Demonstrates using a FirestoreRecyclerAdapter to load data from Cloud Firestore into a RecyclerView for a basic chat app.</string>
     <string name="desc_firestore_paging">Demonstrates using a FirestorePagingAdapter to load/infinite scroll paged data from Cloud Firestore.</string>
@@ -18,11 +18,10 @@
     <string name="desc_storage">Demonstrates displaying an image from Cloud Storage using Glide.</string>
 
     <!-- Auth UI -->
-    <string name="launch_title">FirebaseUI Auth Demo</string>
+    <string name="launch_title">Authorization</string>
     <string name="sign_in_start">Start</string>
-    <string name="sign_in_silent">Sign in silently</string>
 
-    <string name="providers_header">Auth providers</string>
+    <string name="providers_header">Auth methods</string>
     <string name="providers_google">Google</string>
     <string name="providers_facebook">Facebook</string>
     <string name="providers_twitter">Twitter</string>
@@ -127,4 +126,10 @@
     <string name="menu_add_data">Add Data</string>
     <string name="hint_message">Say something…</string>
     <string name="paging_finished_message">Reached End of List</string>
+    <string name="tvCountry">País</string>
+    <string name="hintCountry">Introduce un país…</string>
+    <string name="strErrorWeatherDataNotFound">No se ha encontrado información relacionada con ese país.</string>
+    <string name="title_weatherstack_activity">Api externo WeatherStack</string>
+    <string name="desc_weatherstack">Consulta el clima de numerosos países</string>
+    <string name="searchButton">Buscar</string>
 </resources>

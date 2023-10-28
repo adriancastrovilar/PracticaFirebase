@@ -98,6 +98,11 @@ dependencies {
     debugImplementation(Config.Libs.Misc.leakCanaryFragments)
     releaseImplementation(Config.Libs.Misc.leakCanaryNoop)
     testImplementation(Config.Libs.Misc.leakCanaryNoop)
+
+    implementation(Config.Libs.Retrofit.retrofit)
+    implementation(Config.Libs.Retrofit.converterGson)
+    implementation(Config.Libs.Gson.gson)
+    implementation(Config.Libs.Annotations.annotations)
 }
 
 apply(plugin = "com.google.gms.google-services")

@@ -72,8 +72,6 @@ public class SignedInActivity extends AppCompatActivity {
         populateProfile(response);
         populateIdpToken(response);
 
-        mBinding.deleteAccount.setOnClickListener(view -> deleteAccountClicked());
-
         mBinding.signOut.setOnClickListener(view -> signOut());
     }
 

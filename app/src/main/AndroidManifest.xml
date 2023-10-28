@@ -40,8 +40,11 @@
             android:name=".auth.SignedInActivity"
             android:label="@string/title_auth_activity" />
         <activity
+            android:name=".api.WeatherStackActivity"
+            android:label="@string/title_weatherstack_activity" />
+        <activity
             android:name=".auth.AnonymousUpgradeActivity"
-            android:label="@string/title_anonymous_upgrade"/>
+            android:label="@string/title_anonymous_upgrade" />
 
         <!-- Firestore demo -->
         <activity
