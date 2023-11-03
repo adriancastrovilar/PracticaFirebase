@@ -127,9 +127,9 @@
     <string name="hint_message">Say something…</string>
     <string name="paging_finished_message">Reached End of List</string>
     <string name="tvCountry">País</string>
-    <string name="hintCountry">Introduce un país…</string>
-    <string name="strErrorWeatherDataNotFound">No se ha encontrado información relacionada con ese país.</string>
-    <string name="title_weatherstack_activity">Api externo WeatherStack</string>
-    <string name="desc_weatherstack">Consulta el clima de numerosos países</string>
+    <string name="hintCountry">US, ES…</string>
+    <string name="strErrorShowsDataNotFound">No se ha encontrado información relacionada con ese país.</string>
+    <string name="title_tv_maze_activity">Api externo TvMaze</string>
+    <string name="desc_tv_maze">Consulta los shows que se van a transmitir hoy en numerosos países</string>
     <string name="searchButton">Buscar</string>
 </resources>

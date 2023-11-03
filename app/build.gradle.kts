@@ -5,8 +5,8 @@ plugins {
 }
 
 android {
-    compileSdk = Config.SdkVersions.compile
 
+    compileSdk = 34
     defaultConfig {
         minSdk = Config.SdkVersions.min
         targetSdk = Config.SdkVersions.target
@@ -60,6 +60,8 @@ android {
     }
 
     compileOptions {
+//        isCoreLibraryDesugaringEnabled = true
+
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }

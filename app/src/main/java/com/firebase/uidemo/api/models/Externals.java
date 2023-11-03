@@ -7,35 +7,35 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class WeatherData {
+public class Externals {
 
-    private Request request;
-    private Location location;
-    private Current current;
+    private Object tvrage;
+    private Integer thetvdb;
+    private String imdb;
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
-    public Request getRequest() {
-        return request;
+    public Object getTvrage() {
+        return tvrage;
     }
 
-    public void setRequest(Request request) {
-        this.request = request;
+    public void setTvrage(Object tvrage) {
+        this.tvrage = tvrage;
     }
 
-    public Location getLocation() {
-        return location;
+    public Integer getThetvdb() {
+        return thetvdb;
     }
 
-    public void setLocation(Location location) {
-        this.location = location;
+    public void setThetvdb(Integer thetvdb) {
+        this.thetvdb = thetvdb;
     }
 
-    public Current getCurrent() {
-        return current;
+    public String getImdb() {
+        return imdb;
     }
 
-    public void setCurrent(Current current) {
-        this.current = current;
+    public void setImdb(String imdb) {
+        this.imdb = imdb;
     }
 
     public Map<String, Object> getAdditionalProperties() {
@@ -49,21 +49,18 @@ public class WeatherData {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(WeatherData.class.getName())
-                .append('@')
-                .append(Integer.toHexString(System.identityHashCode(this)))
-                .append('[');
-        sb.append("request");
+        sb.append(Externals.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("tvrage");
         sb.append('=');
-        sb.append(((this.request == null) ? "<null>" : this.request));
+        sb.append(((this.tvrage == null) ? "<null>" : this.tvrage));
         sb.append(',');
-        sb.append("location");
+        sb.append("thetvdb");
         sb.append('=');
-        sb.append(((this.location == null) ? "<null>" : this.location));
+        sb.append(((this.thetvdb == null) ? "<null>" : this.thetvdb));
         sb.append(',');
-        sb.append("current");
+        sb.append("imdb");
         sb.append('=');
-        sb.append(((this.current == null) ? "<null>" : this.current));
+        sb.append(((this.imdb == null) ? "<null>" : this.imdb));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');

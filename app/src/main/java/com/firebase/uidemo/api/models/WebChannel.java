@@ -7,44 +7,44 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Request {
+public class WebChannel {
 
-    private String type;
-    private String query;
-    private String language;
-    private String unit;
+    private Integer id;
+    private String name;
+    private Country country;
+    private String officialSite;
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
-    public String getType() {
-        return type;
+    public Integer getId() {
+        return id;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getQuery() {
-        return query;
+    public String getName() {
+        return name;
     }
 
-    public void setQuery(String query) {
-        this.query = query;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLanguage() {
-        return language;
+    public Country getCountry() {
+        return country;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setCountry(Country country) {
+        this.country = country;
     }
 
-    public String getUnit() {
-        return unit;
+    public String getOfficialSite() {
+        return officialSite;
     }
 
-    public void setUnit(String unit) {
-        this.unit = unit;
+    public void setOfficialSite(String officialSite) {
+        this.officialSite = officialSite;
     }
 
     public Map<String, Object> getAdditionalProperties() {
@@ -58,25 +58,22 @@ public class Request {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(Request.class.getName())
-                .append('@')
-                .append(Integer.toHexString(System.identityHashCode(this)))
-                .append('[');
-        sb.append("type");
+        sb.append(WebChannel.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("id");
         sb.append('=');
-        sb.append(((this.type == null) ? "<null>" : this.type));
+        sb.append(((this.id == null) ? "<null>" : this.id));
         sb.append(',');
-        sb.append("query");
+        sb.append("name");
         sb.append('=');
-        sb.append(((this.query == null) ? "<null>" : this.query));
+        sb.append(((this.name == null) ? "<null>" : this.name));
         sb.append(',');
-        sb.append("language");
+        sb.append("country");
         sb.append('=');
-        sb.append(((this.language == null) ? "<null>" : this.language));
+        sb.append(((this.country == null) ? "<null>" : this.country));
         sb.append(',');
-        sb.append("unit");
+        sb.append("officialSite");
         sb.append('=');
-        sb.append(((this.unit == null) ? "<null>" : this.unit));
+        sb.append(((this.officialSite == null) ? "<null>" : this.officialSite));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');

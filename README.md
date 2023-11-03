@@ -1,4 +1,4 @@
-# API empleada: WeatherStack [!https://weatherstack.com/]
+# API empleada: TvMaze [!https://www.tvmaze.com/api]
 
 # Autor: Adrián Castro Vilar
 

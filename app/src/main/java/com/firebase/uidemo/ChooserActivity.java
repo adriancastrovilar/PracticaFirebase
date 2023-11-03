@@ -21,17 +21,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.firebase.ui.auth.AuthUI;
-import com.firebase.ui.auth.util.ExtraConstants;
-import com.firebase.uidemo.api.WeatherStackActivity;
-import com.firebase.uidemo.auth.AuthUiActivity;
-import com.firebase.uidemo.databinding.ActivityChooserBinding;
-
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.firebase.ui.auth.AuthUI;
+import com.firebase.ui.auth.util.ExtraConstants;
+import com.firebase.uidemo.api.TvMazeActivity;
+import com.firebase.uidemo.auth.AuthUiActivity;
+import com.firebase.uidemo.databinding.ActivityChooserBinding;
 
 public class ChooserActivity extends AppCompatActivity {
     private ActivityChooserBinding mBinding;
@@ -60,7 +60,7 @@ public class ChooserActivity extends AppCompatActivity {
             extends RecyclerView.Adapter<ActivityStarterHolder> {
         private static final Class[] CLASSES = new Class[]{
                 AuthUiActivity.class,
-                WeatherStackActivity.class,
+                TvMazeActivity.class,
 //                FirestoreChatActivity.class,
 //                RealtimeDbChatActivity.class,
 //                FirebaseDbPagingActivity.class,
@@ -68,7 +68,7 @@ public class ChooserActivity extends AppCompatActivity {
 
         private static final int[] DESCRIPTION_NAMES = new int[]{
                 R.string.title_auth_activity,
-                R.string.title_weatherstack_activity,
+                R.string.title_tv_maze_activity,
 //                R.string.title_firestore_activity,
 //                R.string.title_realtime_database_activity,
 //                R.string.title_realtime_database_paging_activity,
@@ -76,7 +76,7 @@ public class ChooserActivity extends AppCompatActivity {
 
         private static final int[] DESCRIPTION_IDS = new int[]{
                 R.string.desc_auth,
-                R.string.desc_weatherstack,
+                R.string.desc_tv_maze,
 //                R.string.desc_firestore,
 //                R.string.desc_realtime_database,
 //                R.string.desc_realtime_database_paging,
