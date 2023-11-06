@@ -43,6 +43,9 @@
             android:name=".api.TvMazeActivity"
             android:label="@string/title_tv_maze_activity" />
         <activity
+            android:name=".historic.FirestoreEpisodeActivity"
+            android:label="@string/title_firestore_episode" />
+        <activity
             android:name=".auth.AnonymousUpgradeActivity"
             android:label="@string/title_anonymous_upgrade" />
 

@@ -2,14 +2,14 @@
     <string name="app_name">Práctica Firebase</string>
 
     <!-- Chooser -->
-    <string name="title_auth_activity">Authorization</string>
+    <string name="title_auth_activity">Autorización</string>
     <string name="title_firestore_activity">Cloud Firestore Demo</string>
     <string name="title_firestore_paging_activity">Cloud Firestore Paging Demo</string>
     <string name="title_realtime_database_activity">Realtime Database Demo</string>
     <string name="title_realtime_database_paging_activity">Realtime Database Paging Demo</string>
     <string name="title_storage_activity">Storage Image Demo</string>
 
-    <string name="desc_auth">Allows sign up and sign in via email.</string>
+    <string name="desc_auth">Permite iniciar sesión como usuario anónimo o proporcionando un correo electrónico</string>
     <string name="desc_anonymous_upgrade">Demonstrates upgrading an anonymous account using FirebaseUI.</string>
     <string name="desc_firestore">Demonstrates using a FirestoreRecyclerAdapter to load data from Cloud Firestore into a RecyclerView for a basic chat app.</string>
     <string name="desc_firestore_paging">Demonstrates using a FirestorePagingAdapter to load/infinite scroll paged data from Cloud Firestore.</string>
@@ -127,9 +127,13 @@
     <string name="hint_message">Say something…</string>
     <string name="paging_finished_message">Reached End of List</string>
     <string name="tvCountry">País</string>
-    <string name="hintCountry">US, ES…</string>
+    <string name="hintCountry">US, GB, FR, CA, ES…</string>
     <string name="strErrorShowsDataNotFound">No se ha encontrado información relacionada con ese país.</string>
-    <string name="title_tv_maze_activity">Api externo TvMaze</string>
-    <string name="desc_tv_maze">Consulta los shows que se van a transmitir hoy en numerosos países</string>
+    <string name="title_tv_maze_activity">API externo TvMaze</string>
+    <string name="desc_tv_maze">Consulta los episodios que se van a transmitir hoy en numerosos países</string>
     <string name="searchButton">Buscar</string>
+    <string name="title_firestore_episode">Histórico de episodios</string>
+    <string name="desc_firestore_episode">Visualiza el listado de episodios solicitados mediante la API</string>
+    <string name="no_episodes">No hay episodios en el historial. Realiza peticiones desde el menú \'API externo TvMaze\' para mostrar datos en el histórico</string>
+    <string name="cant_insert_null_attributes">No se ha podido persistir la petición debido a uno o varios atributos no definidos</string>
 </resources>

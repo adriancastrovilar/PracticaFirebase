@@ -1,6 +1,6 @@
 package com.firebase.uidemo.api;
 
-import com.firebase.uidemo.api.models.TvShow;
+import com.firebase.uidemo.api.models.Episode;
 
 import java.util.List;
 
@@ -11,6 +11,6 @@ import retrofit2.http.Query;
 interface TvMazeRESTAPIService {
 
     @GET("schedule/web")
-    Call<List<TvShow>> getTodayShowsByCountry(@Query("country") String country, @Query("date") String date);
+    Call<List<Episode>> getTodayEpisodesByCountry(@Query("country") String country, @Query("date") String date);
 
 }

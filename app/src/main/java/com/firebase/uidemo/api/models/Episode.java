@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class TvShow {
+public class Episode {
 
     private Integer id;
     private String url;
@@ -157,7 +157,7 @@ public class TvShow {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(TvShow.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(Episode.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("id");
         sb.append('=');
         sb.append(((this.id == null) ? "<null>" : this.id));

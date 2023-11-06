@@ -32,6 +32,7 @@ import com.firebase.ui.auth.util.ExtraConstants;
 import com.firebase.uidemo.api.TvMazeActivity;
 import com.firebase.uidemo.auth.AuthUiActivity;
 import com.firebase.uidemo.databinding.ActivityChooserBinding;
+import com.firebase.uidemo.historic.FirestoreEpisodeActivity;
 
 public class ChooserActivity extends AppCompatActivity {
     private ActivityChooserBinding mBinding;
@@ -61,25 +62,19 @@ public class ChooserActivity extends AppCompatActivity {
         private static final Class[] CLASSES = new Class[]{
                 AuthUiActivity.class,
                 TvMazeActivity.class,
-//                FirestoreChatActivity.class,
-//                RealtimeDbChatActivity.class,
-//                FirebaseDbPagingActivity.class,
+                FirestoreEpisodeActivity.class,
         };
 
         private static final int[] DESCRIPTION_NAMES = new int[]{
                 R.string.title_auth_activity,
                 R.string.title_tv_maze_activity,
-//                R.string.title_firestore_activity,
-//                R.string.title_realtime_database_activity,
-//                R.string.title_realtime_database_paging_activity,
+                R.string.title_firestore_episode,
         };
 
         private static final int[] DESCRIPTION_IDS = new int[]{
                 R.string.desc_auth,
                 R.string.desc_tv_maze,
-//                R.string.desc_firestore,
-//                R.string.desc_realtime_database,
-//                R.string.desc_realtime_database_paging,
+                R.string.desc_firestore_episode,
         };
 
         @Override
