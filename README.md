@@ -4,8 +4,10 @@
 
 Se ha empleado una API que obtiene un listado de episodios que van a ser o han sido
 retransmitidos en el país indicado (el mismo día en que se realiza la petición).
-Una vez se realiza la petición, se persistirán aquellos episodios cuyos atributos imprescindibles
-(nombre, duración y temporada) tengan un valor definido.
+Una vez se realiza la petición, se persistirán sólo aquellos episodios cuyos atributos
+imprescindibles
+(nombre, duración y temporada) tengan un valor definido con el fin de mostrar información de
+interés.
 
 # Autor: Adrián Castro Vilar
 
