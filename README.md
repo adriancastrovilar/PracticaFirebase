@@ -16,6 +16,10 @@ interés.
 - Firestore database
   ![img.png](imgs/fb-firestoredatabase-data.png)
 
+# Observaciones
+El proyecto comrpimido contiene varios directorios procedentes del proyecto modelo que se dio en clase.
+Se pueden ignorar, los cambios han sido realizados en el directorio /app
+
 Autor -> Adrián Castro Vilar
 
 Práctica de FEM - MiW UPM
