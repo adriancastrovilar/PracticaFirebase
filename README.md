@@ -17,8 +17,8 @@ interés.
   ![img.png](imgs/fb-firestoredatabase-data.png)
 
 # Observaciones
-El proyecto comrpimido contiene varios directorios procedentes del proyecto modelo que se dio en clase.
-Se pueden ignorar, los cambios han sido realizados en el directorio /app
+El proyecto contiene varios directorios necesarios para compilar la aplicación (procedentes del proyecto modelo dado en clase).
+Dichos directorios ('/auth', '/database', '/firebase'...) se pueden ignorar ya que los cambios han sido realizados en el directorio '/app'.
 
 Autor -> Adrián Castro Vilar
 
