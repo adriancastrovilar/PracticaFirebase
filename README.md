@@ -16,6 +16,9 @@ interés.
 - Firestore database
   ![img.png](imgs/fb-firestoredatabase-data.png)
 
+# Video de la app
+[VideoApp.mp4](VideoApp.mp4)
+
 Autor -> Adrián Castro Vilar
 
 Práctica de FEM - MiW UPM
