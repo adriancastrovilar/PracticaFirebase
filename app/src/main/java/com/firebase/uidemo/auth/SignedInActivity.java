@@ -22,13 +22,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
 import com.firebase.ui.auth.util.ExtraConstants;
 import com.firebase.uidemo.R;
 import com.firebase.uidemo.databinding.SignedInLayoutBinding;
-import com.firebase.uidemo.storage.GlideApp;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
@@ -37,11 +40,6 @@ import com.google.firebase.auth.UserInfo;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class SignedInActivity extends AppCompatActivity {
     private static final String TAG = "SignedInActivity";
@@ -89,48 +87,21 @@ public class SignedInActivity extends AppCompatActivity {
                 });
     }
 
-    public void deleteAccountClicked() {
-        new MaterialAlertDialogBuilder(this)
-                .setMessage("Are you sure you want to delete this account?")
-                .setPositiveButton("Yes, nuke it!", (dialogInterface, i) -> deleteAccount())
-                .setNegativeButton("No", null)
-                .show();
-    }
-
-    private void deleteAccount() {
-        AuthUI.getInstance()
-                .delete(this)
-                .addOnCompleteListener(this, task -> {
-                    if (task.isSuccessful()) {
-                        startActivity(AuthUiActivity.createIntent(SignedInActivity.this));
-                        finish();
-                    } else {
-                        showSnackbar(R.string.delete_account_failed);
-                    }
-                });
-    }
-
     private void populateProfile(@Nullable IdpResponse response) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        if (user.getPhotoUrl() != null) {
-            GlideApp.with(this)
-                    .load(user.getPhotoUrl())
-                    .fitCenter()
-                    .into(mBinding.userProfilePicture);
-        }
 
         mBinding.userEmail.setText(
-                TextUtils.isEmpty(user.getEmail()) ? "No email" : user.getEmail());
+                TextUtils.isEmpty(user.getEmail()) ? "Sin email" : user.getEmail());
         mBinding.userPhoneNumber.setText(
-                TextUtils.isEmpty(user.getPhoneNumber()) ? "No phone number" : user.getPhoneNumber());
+                TextUtils.isEmpty(user.getPhoneNumber()) ? "Sin número de teléfono" : user.getPhoneNumber());
         mBinding.userDisplayName.setText(
-                TextUtils.isEmpty(user.getDisplayName()) ? "No display name" : user.getDisplayName());
+                TextUtils.isEmpty(user.getDisplayName()) ? "Sin nombre de usuario" : user.getDisplayName());
 
         if (response == null) {
             mBinding.userIsNew.setVisibility(View.GONE);
         } else {
             mBinding.userIsNew.setVisibility(View.VISIBLE);
-            mBinding.userIsNew.setText(response.isNewUser() ? "New user" : "Existing user");
+            mBinding.userIsNew.setText(response.isNewUser() ? "Nuevo usuario" : "Usuario existente");
         }
 
         List<String> providers = new ArrayList<>();

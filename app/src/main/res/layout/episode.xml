@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="26dp"
         android:layout_marginRight="26dp"
-        android:background="@drawable/ic_chat_message_background"
+        android:background="@drawable/ic_episode_background"
         android:orientation="vertical"
         android:padding="10dp">
 
