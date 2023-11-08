@@ -47,12 +47,6 @@ public class FirestoreEpisodeActivity extends AppCompatActivity {
         mBinding.episodesList.setHasFixedSize(true);
         mBinding.episodesList.setLayoutManager(manager);
 
-//        mBinding.episodesList.addOnLayoutChangeListener((view, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> {
-//            if (bottom < oldBottom) {
-//                mBinding.messagesList.postDelayed(() -> mBinding.messagesList.smoothScrollToPosition(
-//                        0), 100);
-//            }
-//        });
     }
 
     @Override

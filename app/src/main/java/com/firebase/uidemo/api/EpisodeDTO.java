@@ -40,7 +40,11 @@ public class EpisodeDTO {
 
 
     public String getName() {
-        return "Nombre: " + name;
+        return name;
+    }
+
+    public String getHistoricName() {
+        return name;
     }
 
     public void setName(String name) {
@@ -48,6 +52,10 @@ public class EpisodeDTO {
     }
 
     public String getSeason() {
+        return season;
+    }
+
+    public String getHistoricSeason() {
         return "Season: " + season;
     }
 
@@ -56,6 +64,10 @@ public class EpisodeDTO {
     }
 
     public String getRuntime() {
+        return runtime;
+    }
+
+    public String getHistoricRuntime() {
         return "Duración: " + runtime + " minutos";
     }
 
@@ -64,16 +76,16 @@ public class EpisodeDTO {
     }
 
     public String getTimestamp() {
-        return getFormatedTimestamp(timestamp);
+        return timestamp;
     }
 
-    private String getFormatedTimestamp(String timestamp) {
+    public String getFormatedTimestamp() {
         long milis = Long.parseLong(timestamp);
         Date currentDate = new Date(milis);
         DateFormat format = new SimpleDateFormat("dd/MM/yyyy", Locale.FRANCE);
         format.setTimeZone(TimeZone.getTimeZone("Etc/UTC"));
         String formatted = format.format(currentDate);
-        return "Date: " + formatted;
+        return "Fecha: " + formatted;
     }
 
 }
