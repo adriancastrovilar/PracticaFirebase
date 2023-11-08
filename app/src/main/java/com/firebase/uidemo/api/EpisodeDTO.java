@@ -43,7 +43,7 @@ public class EpisodeDTO {
         return name;
     }
 
-    public String getHistoricName() {
+    public String showHistoricName() {
         return name;
     }
 
@@ -55,7 +55,7 @@ public class EpisodeDTO {
         return season;
     }
 
-    public String getHistoricSeason() {
+    public String showHistoricSeason() {
         return "Season: " + season;
     }
 
@@ -67,7 +67,7 @@ public class EpisodeDTO {
         return runtime;
     }
 
-    public String getHistoricRuntime() {
+    public String showHistoricRuntime() {
         return "Duración: " + runtime + " minutos";
     }
 
@@ -79,7 +79,7 @@ public class EpisodeDTO {
         return timestamp;
     }
 
-    public String getFormatedTimestamp() {
+    public String showFormatedHistoricTimestamp() {
         long milis = Long.parseLong(timestamp);
         Date currentDate = new Date(milis);
         DateFormat format = new SimpleDateFormat("dd/MM/yyyy", Locale.FRANCE);

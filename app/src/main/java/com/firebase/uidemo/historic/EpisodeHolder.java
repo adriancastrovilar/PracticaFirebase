@@ -26,10 +26,10 @@ public class EpisodeHolder extends RecyclerView.ViewHolder {
 
 
     public void bind(@NonNull EpisodeDTO episode) {
-        setName(episode.getHistoricName());
-        setSeason(episode.getHistoricSeason());
-        setRuntime(episode.getHistoricRuntime());
-        setTimestamp(episode.getFormatedTimestamp());
+        setName(episode.showHistoricName());
+        setSeason(episode.showHistoricSeason());
+        setRuntime(episode.showHistoricRuntime());
+        setTimestamp(episode.showFormatedHistoricTimestamp());
     }
 
     private void setName(@Nullable String name) {
