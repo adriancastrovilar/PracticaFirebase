@@ -19,6 +19,10 @@ interés.
 # Video de la app
 [VideoApp.mp4](VideoApp.mp4)
 
+# Observaciones
+El proyecto contiene varios directorios necesarios para compilar la aplicación (procedentes del proyecto modelo dado en clase).
+Dichos directorios ('/auth', '/database', '/firebase'...) se pueden ignorar ya que los cambios han sido realizados en el directorio '/app'.
+
 Autor -> Adrián Castro Vilar
 
 Práctica de FEM - MiW UPM
