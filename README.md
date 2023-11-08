@@ -17,7 +17,7 @@ interés.
   ![img.png](imgs/fb-firestoredatabase-data.png)
 
 # Video de la app
-[VideoApp.mp4](VideoApp.mp4)
+https://drive.google.com/file/d/1d2SDDR5bTwMz-2tuceMbvWjTITBZdjtW/view?usp=sharing
 
 # Observaciones
 El proyecto contiene varios directorios necesarios para compilar la aplicación (procedentes del proyecto modelo dado en clase).
